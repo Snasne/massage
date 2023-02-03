@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/massage/static/css/main.55130525.css",
+    "main.js": "/massage/static/js/main.51736655.js",
+    "static/media/doctor.png": "/massage/static/media/doctor.7c71973075f8191a347b.png",
+    "static/media/terapy.jpg": "/massage/static/media/terapy.745d3847c43ec274bb4f.jpg",
+    "static/media/reabilitation.jpg": "/massage/static/media/reabilitation.8a7ffe611d2317a2b0d8.jpg",
+    "static/media/massage.jpg": "/massage/static/media/massage.f5546533e40ca5192043.jpg",
+    "static/media/group-doctors.png": "/massage/static/media/group-doctors.7b6cc1ed718d9dfc895e.png",
+    "static/media/whatsappIconDefault.png": "/massage/static/media/whatsappIconDefault.d70341c1574dd38a8b72.png",
+    "static/media/notFoundPage.png": "/massage/static/media/notFoundPage.ecb39f64206ad4797ff1.png",
+    "static/media/instIconDefault.png": "/massage/static/media/instIconDefault.bf9f2afe9149c050da95.png",
+    "static/media/telegrammIconDefault.png": "/massage/static/media/telegrammIconDefault.32181a8449f5b854e3e0.png",
+    "static/media/phoneIcon.png": "/massage/static/media/phoneIcon.833341a1f0fc18230408.png",
+    "static/media/heardForLogo.png": "/massage/static/media/heardForLogo.5b4f2d669bce20fcfa11.png",
+    "index.html": "/massage/index.html",
+    "main.55130525.css.map": "/massage/static/css/main.55130525.css.map",
+    "main.51736655.js.map": "/massage/static/js/main.51736655.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55130525.css",
+    "static/js/main.51736655.js"
+  ]
+}
