@@ -1,0 +1,168 @@
+.wrapper {
+    width: 100%; height: fit-content;
+    display: flex; justify-content: center; align-items: center;
+    .leftInfo {
+        width: 521px; height: 560px;
+        background-image: url(./images/doctor.png);
+        background-size: cover;
+        transform: scale(-1, 1);
+        margin-top: 45px;
+        margin-bottom: 90px;
+        filter: drop-shadow(0px 0px 15px rgba($color: #ffffff, $alpha: 0.5));
+        -webkit-filter: drop-shadow(0px 0px 15px rgba($color: #ffffff, $alpha: 0.5));
+    }   
+    .rightText {
+        display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+        h1 {
+            color: #FFFFFF;
+            font-size: 82px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 45px;
+        }
+        .rightText__middleText {
+            display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+            .middleText__upText {
+                h3 {
+                    color: #FFFFFF;
+                    font-size: 52px;
+                    font-weight: bold;
+                    display: inline-block;
+                }
+            }
+            .middleText__bottomText {
+                margin-bottom: 45px;
+                h3 {
+                    color: #FFFFFF;
+                    font-size: 52px;
+                    font-weight: bold;
+                    display: inline-block;
+                }
+                .bottomText__violetText {
+                    color: #780AFF;
+                    font-size: 52px;
+                    font-weight: bold;
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+            }
+        }
+        button {
+            border-radius: 30px;
+            border: 0;
+            background: rgb(255,193,0);
+            background: linear-gradient(180deg, rgba(255,193,0,1) 0%, rgba(253,190,17,1) 50%, rgba(255,193,0,1) 100%);
+            padding: 15px 45px;
+            margin-bottom: 45px;
+            font-size: 24px;
+            font-weight: bold;
+            transition: 0.3s;
+            &:hover {
+                cursor: pointer;
+                -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 230, 0, 0.2);
+                -moz-box-shadow: 0px 0px 10px 5px rgba(255, 230, 0, 0.2);
+                box-shadow: 0px 0px 10px 5px rgba(255, 230, 0, 0.2);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1439px) {
+    .wrapper {
+        .leftInfo {
+            width: 521px; height: 560px;
+        }
+        .rightText {
+            h1 {
+                font-size: 52px;
+            }
+            .rightText__middleText {
+                .middleText__upText {
+                    h3 {
+                        font-size: 32px;
+                    }
+                }
+                .middleText__bottomText {
+                    h3 {
+                        font-size: 32px;
+                    }
+                    .bottomText__violetText {
+                        font-size: 32px;
+                    }
+                }
+
+            }
+            button {
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .wrapper {
+        .leftInfo {
+            width: 421px; height: 460px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .wrapper {
+        .leftInfo {
+            display: none;
+        }
+        .rightText {
+            margin-top: 150px;
+            h1 {
+                font-size: 8.2vw;
+            }
+            .rightText__middleText {
+                .middleText__upText {
+                    h3 {
+                        font-size: 5.2vw;
+                    }
+                }
+                .middleText__bottomText {
+                    h3 {
+                        font-size: 5.2vw;
+                    }
+                    .bottomText__violetText {
+                        font-size: 5.2vw;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 425px) {
+    .wrapper {
+        .rightText {
+            .rightText__middleText {
+                .middleText__upText {
+                    h3 {
+                        font-size: 6.2vw;
+                    }
+                }
+                .middleText__bottomText {
+                    h3 {
+                        font-size: 6.2vw;
+                    }
+                    .bottomText__violetText {
+                        font-size: 6.2vw;
+                        margin: 0 1.1vw;
+                    }
+                }
+
+            }
+        }
+    }
+}

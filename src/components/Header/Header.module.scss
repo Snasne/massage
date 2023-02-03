@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+%icons-properties {
+    width: 75px; height: 75px;
+    border-radius: 30px;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba($color: #ffffff, $alpha: 0.25));
+    -webkit-filter: drop-shadow(0px 4px 4px rgba($color: #ffffff, $alpha: 0.25));
+}
+
+.wrapper {
+    width: 100%; height: fit-content;
+    box-sizing: border-box;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-flow: row nowrap;
+    padding: 15px;
+    .logo {
+        display: flex; justify-content: center; align-items: center;
+        width: fit-content; height: fit-content;
+        .iconHeard {
+            width: 100px; height: 100px;
+            background-size: cover;
+            background-image: url(./images/heardForLogo.png);
+        }
+        p {
+            text-transform: uppercase;
+            padding-left: 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0px 4px 4px rgba($color: #ffffff, $alpha: 0.25);
+        }
+    }
+    .navbar {
+        display: flex; justify-content: center; align-items: center;
+        width: fit-content; height: fit-content;
+        .mobileInfo {
+            display: flex; justify-content: center; align-items: center;
+            margin-right: 1vw;
+            .mobileIcon {
+                background-image: url(./images/phoneIcon.png);
+                @extend %icons-properties;
+            }
+            .mobileIconButton {
+                display: none;
+            }
+            .defaultNumber {
+                text-align: center;
+                display: inline-block;
+                font-size: 36px;
+                font-weight: bold;
+                color: white;
+                text-shadow: 0px 4px 4px rgba($color: #ffffff, $alpha: 0.25);
+            }
+        }
+        .socialButtons {
+            display: flex; justify-content: center; align-items: center;
+            .instagramIcon {
+                background-image: url(./images/instIconDefault.png);
+                @extend %icons-properties;
+                transition: 0.3s;
+                &:hover {
+                    filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                    -webkit-filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                    cursor: pointer;
+                    background-color: #e1306c;
+                }
+            }
+            .whatsappIcon {
+                background-image: url(./images/whatsappIconDefault.png);
+                @extend %icons-properties;
+                transition: 0.3s;
+                &:hover {
+                    filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                    -webkit-filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                    cursor: pointer;
+                    background-color: #43d854;
+                }
+            }
+            .telegramIcon {
+                background-image: url(./images/telegrammIconDefault.png);
+                @extend %icons-properties;
+                transition: 0.3s;
+                &:hover {
+                    filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                    -webkit-filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                    cursor: pointer;
+                    background-color: #0088cc;
+                }
+            }
+        }
+    }
+    .anotherNavbar {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        top: 0%;
+        .buttonOpenAdaptiveNavbar {
+            margin: 15px;
+            width: 60px; height: 60px;
+            border-radius: 20px;
+            border: 2px solid white;
+            background: transparent;
+            display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+            .buttonOpenAdaptiveNavbar__containerForSpans {
+                display: flex; justify-content: space-around; align-items: center; flex-flow: column nowrap;
+                height: 30px;
+                span {
+                    width: 30px; height: 3px;
+                    background-color: white;
+                }
+            }
+        }
+        .adaptiveNavbar {
+            width: fit-content; height: 100vh;
+            display: flex; justify-content: flex-start; align-items: center; flex-flow: column nowrap;
+            padding: 15px;
+            background-color: rgba($color: #271f21, $alpha: 1);
+            .adaptiveNavbar__upperInfo {
+                display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+                margin-bottom: 20px;
+                .bodyAdaptiveNavbar {
+                    display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+                    .containerAdaptiveNavbar {
+                        display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+                        .containerAdaptiveNavbar__logo {
+                            display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+                            margin-right: 25px;
+                            .containerAdaptiveNavbar__iconHeard {
+                                width: 75px; height: 75px;
+                                background-size: cover;
+                                background-image: url(./images/heardForLogo.png);
+                            }
+                            .containerAdaptiveNavbar__logoText {
+                                text-transform: uppercase;
+                                padding-left: 15px;
+                                text-align: center;
+                                display: inline-block;
+                                font-size: 22px;
+                                font-weight: bold;
+                                color: white;
+                                text-shadow: 0px 4px 4px rgba($color: #ffffff, $alpha: 0.25);
+                            }
+                        }
+                    }
+                    .buttonEscape {
+                        width: 60px; height: 60px;
+                        border: 2px solid white;
+                        border-radius: 20px;
+                        background-color: transparent;
+                        display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+                        span {
+                            width: 30px; height: 3px;
+                            background-color: rgb(255, 56, 56);
+                            position: absolute;
+                        }
+                        .buttonEscape__leftCross {
+                            transform: rotate(45deg);
+                        }
+                        .buttonEscape__rightCross {
+                            transform: rotate(135deg);
+                        }
+                    }
+                }
+            }
+            .adaptiveNavbar__bottomInfo {
+                width: 100%;
+                display: flex; justify-content: space-between; align-items: center; flex-flow: row nowrap;
+                margin-bottom: 2vw;
+                .adaptiveNavbar__instagramIcon {
+                    background-image: url(./images/instIconDefault.png);
+                    @extend %icons-properties;
+                    transition: 0.3s;
+                    &:hover {
+                        filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                        -webkit-filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                        cursor: pointer;
+                        background-color: #e1306c;
+                    }
+                }
+                .adaptiveNavbar__whatsappIcon {
+                    background-image: url(./images/whatsappIconDefault.png);
+                    @extend %icons-properties;
+                    transition: 0.3s;
+                    &:hover {
+                        filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                        -webkit-filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                        cursor: pointer;
+                        background-color: #43d854;
+                    }
+                }
+                .adaptiveNavbar__telegramIcon {
+                    background-image: url(./images/telegrammIconDefault.png);
+                    @extend %icons-properties;
+                    transition: 0.3s;
+                    &:hover {
+                        filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                        -webkit-filter: drop-shadow(0px 0px 0px rgba($color: #ffffff, $alpha: 0.25));
+                        cursor: pointer;
+                        background-color: #0088cc;
+                    }
+                }
+            }
+            .adaptiveNavbar__mobileInfo {
+                text-align: center;
+                display: inline-block;
+                font-size: 28px;
+                font-weight: bold;
+                color: white;
+                text-shadow: 0px 4px 4px rgba($color: #ffffff, $alpha: 0.25);
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 968px) {
+    .wrapper {
+        padding: 0;
+        .logo {
+            display: none;
+        }
+        .navbar {
+            display: none;
+        }
+        .anotherNavbar {
+            display: block;
+        }
+    }
+}

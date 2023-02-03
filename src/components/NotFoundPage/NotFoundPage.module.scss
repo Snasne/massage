@@ -1,0 +1,37 @@
+.wrapper {
+    width: 100vw; height: 100vh;
+    display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+    box-sizing: border-box;
+    .container {
+        width: 500px; height: 500px;
+        background-image: url(./images/notFoundPage.png);
+        background-size: cover;
+        margin-bottom: 25px;
+    }
+    button {
+        border-radius: 30px;
+        margin: 15px;
+        border: 0;
+        background: #780AFF;
+        color: white;
+        background: linear-gradient(180deg, #780AFF 0%, #6703e2 50%, #780AFF 100%);
+        padding: 15px 45px;
+        font-size: 24px;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover {
+            cursor: pointer;
+            -webkit-box-shadow: 0px 0px 10px 5px #780AFF;
+            -moz-box-shadow: 0px 0px 10px 5px #780AFF;
+            box-shadow: 0px 0px 10px 5px #780AFF;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        .container {
+            width: 250px; height: 250px;
+        }
+    }
+}
