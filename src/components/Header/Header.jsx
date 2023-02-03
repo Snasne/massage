@@ -67,15 +67,21 @@ export default function Header() {
                     </div>
                 </div>
                 <div className={headerStyles.adaptiveNavbar__bottomInfo}>
-                    <div className={headerStyles.adaptiveNavbar__instagramIcon}>
-                    
-                    </div>
-                    <div className={headerStyles.adaptiveNavbar__whatsappIcon}>
-                    
-                    </div>
-                    <div className={headerStyles.adaptiveNavbar__telegramIcon}>
-                    
-                    </div>
+                    <Link to='/'>
+                        <div className={headerStyles.adaptiveNavbar__instagramIcon}>
+                        
+                        </div>
+                    </Link>
+                    <Link to='/'>
+                        <div className={headerStyles.adaptiveNavbar__whatsappIcon}>
+                        
+                        </div>
+                    </Link>
+                    <Link to='/'>
+                        <div className={headerStyles.adaptiveNavbar__telegramIcon}>
+                        
+                        </div>
+                    </Link>
                 </div>
                 <p className={headerStyles.adaptiveNavbar__mobileInfo}>+7 (987) 602 37 05</p>
             </div>
